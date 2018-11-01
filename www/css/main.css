@@ -107,3 +107,16 @@ h1{
 	background:#5e2281;
 	color:#f4f4f4;
 }
+
+.galerie{
+    	margin: 4em 0;
+}
+.galerie a{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin: auto;
+}
+
+.materialy{
+    	margin: 4em 0;
+}
