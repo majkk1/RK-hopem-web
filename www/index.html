@@ -1,290 +1,105 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html>
 <head>
 	<title>Rádcovský kurz HOPEM</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Rádcovský kurz Hopem je určen pro rádce ve věku 13-16 let. Proběhne 12.-14. října 2018 v DBC Březiny.">
-	<meta name="keywords" content="Rádcovský kurz,RK,Hopem,skaut">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/main.css">
-	<link rel="stylesheet" type="text/css" href="./css/fonts.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous">
-      
-	<!-- Favicon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-	<link rel="manifest" href="./site.webmanifest">
-	<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="theme-color" content="#ffffff">
-	
-	<!-- OpenGraph -->
-	<meta property="og:type" content="website">
-	<meta property="og:image:height" content="423">
-	<meta property="og:image:width" content="808">
-	<meta property="og:title" content="Rádcovský kurz Hopem">
-	<meta property="og:url" content="https://rkhopem.skauting.cz">
-	<meta property="og:image" content="https://rkhopem.skauting.cz/images/og-image.jpg">
-	<meta property="og:description" content="je určen pro všechny rádce ve věku 13-16 let, kteří se ještě nezúčastnili rádcovského kurzu. Proběhne 12.-14. října 2018 v DBC Březiny. ">
+	<link rel="icon" type="image/png" href="./favicon.ico">
 </head>
+<style>
+body, html, a {
+    height: 100%;
+    margin: 0;
+    color: white;
+}
 
+.bgimg {
+    background-image: url('./bg.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 0;
+    right: 16px;
+}
+
+hr {
+    margin: auto;
+    width: 80%;
+    color: white;
+}
+</style>
 <body>
-<!-- Menu -->
-<nav class="navbar navbar-expand-lg fixed-top">
-	<a class="navbar-brand" data-value="header" href="#header">RK Hopem</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"><i class="fas fa-bars fa-lg"></i></span>
-	</button>
 
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-4">  
-        	<li class="nav-item">
-				<a class="nav-link" href="#aktuality">Aktuality</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#informace">Informace</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#prihlaska">Přihláška</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#kontakty">Kontakty</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="./galerie.html">Fotogalerie</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="./materialy.html">Materiály</a>
-			</li>
-		</ul>
-	</div>
-</nav>
-
-<!-- Hlavička -->
-<header class="header" id="header">
-	<div class="container">
-		<div class="description">
-			<h1>Rádcovský kurz HOPEM</h1>
-			<p>
-				je určen pro všechny rádce ve věku 13-16 let, kteří se ještě nezúčastnili rádcovského kurzu. Proběhne 12.-14. října 2018 v DBC Březiny.
-			</p>
-			<a class="btn-lg" href="#informace" role="button">Chci vědět více.</a>
-		</div>
-	</div>
-</header>
-
-<!-- Aktuality -->
-<div class="aktuality" id="aktuality">
-    <div class="container">
-        <h1 class="text-center">Aktuality</h1>
-
-        <div class="card">
-        <div class="card-body">
-        <p class="card-text">
-            <p>
-                <b>1. 11. 2018:</b> Na webu přibyly dvě nové sekce – <a href="./galerie.html">fotogalerie</a> a sekce s <a href="./materialy.html">materiály</a>. Tímto se s vámi pro teď loučíme. Nebo ne?
-            </p>
-            <p>
-                PS: Víš, jaké je heslo každého dobrého rádce?
-            </p>
-            <p class="text-center font-weight-bold">
-                BUĎ K SOBĚ PŘÍSNÝ A NIC SI NEODPUSŤ!<br>
-                A HLEĎ SE STÁLE ZDOKONALOVAT!<br>
-            </p>
-        </p>
-        </div>
-        </div>
-        
-        <p>
-        <b>14. 10. 2018:</b> První RK Hopem je za námi. Doufáme, že jste si ho užili tak jako my! Sledujte i dále náš web, brzy se zde objeví fotky z celé akce a veškeré materiály. Jo a po úklidu Březin zůstalo pár  <a href="./images/ztraty.jpg" data-toggle="lightbox">zapomenutých věcí</a>, pokud ti něco chybí, ozvi se.
-        </p>
-        <p>
-        <b>12. 10. 2018:</b> Byly doplněny <a href="#prijezd">informace</a> (přišedši e-mailem) o čase příjezdu a odjezdu.
-        </p>
-        <p>
-        <b>9. 10. 2018:</b> Upozorňujeme účastníky, že je třeba zaplatit kurz předem (informace o platbě byly zaslány e-mailem) a dovést s sebou na akci vyplněnou papírovou přihlášku podepsanou rodiči!
-        </p>
-        <p>
-        <b>7. 10. 2018:</b> Pokud ti nedošel e-mail s dalšíma informace o kurzu, <a href="#kontakty">kontaktuj</a> nás.
-        </p>
-
-	</div>
+<div class="bgimg">
+  <div class="topleft">
+    <p><b>Rádcovský kurz HOPEM 2</b></p>
+  </div>
+  <div class="middle">
+    <h1>5.–7. dubna 2019</h1>
+    <hr>
+    <p id="demo" style="font-size:30px;font-weight:bold;"></p>
+  </div>
+  <div class="bottomright">
+	<p>Předchozí akce: <a href=./archiv/2018-RK-HOPEM-1/index.html>RK Hopem 1 2018</a> | Pořádají <a href=http://www.skauti.cz>skauti Vsetín</a></p>
+  </div>
 </div>
 
-<!-- Informace -->
-<div class="informace" id="informace">
-    <div class="container">
-        <h1 class="text-center">Informace</h1>
-        <p>
-			Rádcovský kurz HOPEM je víkendový kurz pro ty, kteří se chtějí v rádcování rychle zorientovat a zažít něco nového!
-        </p>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Apr 5, 2019 18:00:00").getTime();
 
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12"> 
-                <div class="card">	
-                    <div class="card-icon text-center">  
-                        <i class="fas fa-users fa-4x"></i>		
-				    </div>
-                    <div class="card-body"> 
-				        <h4 class="card-title text-center">Pro koho je určen RK Hopem?</h4>
-				        <p class="card-text">
-							Pro všechny skauty a skautky ve věku 13–16 let, kteří ještě nikdy nebyli na rádcáku.
-					   </p>
-				    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12"> 
-                <div class="card">	
-                    <div class="card-icon text-center">
-                        <i class="far fa-calendar-alt fa-4x"></i>
-                        <i class="fas fa-map-marked-alt fa-4x"></i>
-				    </div>		
-				    <div class="card-body">
-				        <h4 class="card-title text-center">Kdy a kde kurz proběhne?</h4>
-				        <p class="card-text">
-							Kurz proběhne v Dětském bezbariérovém centru <a href="http://breziny.cz">Březiny</a> v Kateřinicích u Vsetína, a to o víkendu 12.–14. 10. 2018.
-					   </p>
-				    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12"> 
-                <div class="card">	
-                    <div class="card-icon text-center">  
-                        <i class="fas fa-money-bill-wave fa-4x"></i>		
-				    </div>		
-				    <div class="card-body">
-				        <h4 class="card-title text-center">Kolik mě to bude stát?</h4>
-				        <p class="card-text">
-							Účastnický poplatek pro letošní rok nebude víc než 350&nbsp;Kč.
-					   </p>
-				    </div>
-                </div>
-            </div>		
-        </div> 
-		
-		<h3>Jak se přihlásím?</h3>
-		<p>
-			1) Vyplň předběžnou přihlášku.<br>
-			2) Po této registraci budeš kontaktován na email naším týmem s dalšími pokyny.<br>
-			3) Vytiskneš si závaznou přihlášku, kterou spolu s rodiči vyplníš.<br>
-			4) Na akci pak s sebou tuto závaznou přihlášku přivezeš a předáš vedoucím.<br>
-		</p>
-		<p>
-			Kapacita kurzu je omezená, proto s přihlašováním neotálej. <b>Přihlášky přijímáme do 5. 10. 2018!</b> Za přihlášeného účastníka se považuje ten, který vyplní předběžnou přihlášku a následně uhradí účastnický poplatek na bankovní účet skautského střediska Vsetín.
-		</p>
-		
-		<h3>Detaily o platbě:</h3>
-		<p>
-			Pokyny k platbě budou odeslány e-mailem na adresu zadanou v přihlášce.
-        </p>
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
 
-        <h3 id="prijezd"><b>Kdy přijet na Březiny?</b></h3>
-        <p>
-            Příjezd je mezi páteční 18-19 hodinou v Dětském bezbariérové centru Březiny. Každý si zajišťuje dopravu na místo sám.
-        </p>
-        
-        <h3>Kdy rádcák končí</h3>
-        <p>
-            V neděli kolem 11 hodiny poobědváme a ve 12 se rozloučíme.
-        </p>
-        
-        <h3>Co si vzít s sebou?</h3>
-		<ul>
-			<li><b>závaznou přihlášku</b></li>
-			<li>karimatku + spacák</li>
-			<li>hygienické potřeby + ručník</li>
-			<li>přezůvky do chaty</li>
-			<li>vhodné oblečení na ven i dovnitř</li>
-			<li>vhodné boty</li>
-			<li>kartičku pojišťovny</li>
-			<li>pláštěnka</li>
-			<li>skautský kroj</li>
-			<li>deník + psací potřeby + složka na dokumenty</li>
-			<li>šátek na hry</li>
-			<li>jídlo na páteční večer (od sobotního rána zajištěno společné)</li>
-            <li><b>společenský oděv (pánové košili, dámy dle uvážení)</b></li>
-		</ul>
-	</div>
-</div>
-
-<!-- Přihláška -->
-<div class="prihlaska" id="prihlaska">
-    <div class="container">
-        <h1 class="text-center">Přihláška</h1>
-
-<!--        <p>
-        Pro přihlášení prosím vyplň náš <a href="https://goo.gl/zkhTUh" alt="přihláška">Google Formulář: https://goo.gl/zkhTUh</a>.
-        </p>
--->
-        
-        <div class="alert alert-danger" role="alert">
-			Kurz již proběhl.
-        </div>
-<!--
-		<div class="formular" id="formular">
-			<div class="card">
-				<div class="card-header" id="headingOne">
-					<h5 class="mb-0">
-						<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						Otevřít přihlášku
-						</button>
-					</h5>
-				</div>
-			
-				<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#formular">
-					<div class="card-body">
-						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTNppc-Tu1mnhi6ApsvsTBFhUqOaedqmjFQI7JBdA1NgfDBA/viewform?embedded=true" width="100%" height="1650" frameborder="0" marginheight="0" marginwidth="0">Načítání...</iframe>
-					</div>
-				</div>
-			</div>
-		</div>
--->
-	</div>
-</div>
-
-<!-- Kontakty -->
-<div class="kontakty" id="kontakty">
-    <div class="container">
-        <h1 class="text-center">Kontakty</h1>
-
-		<p>Pokud máš jakýkoliv dotaz, neváhej nás kontaktovat.</p>
-
-		<table>
-			<tr>
-			  <th><i class="fas fa-envelope fa-lg"></i></th>
-			  <td><a href="mailto:rkhopem@gmail.com">rkhopem@gmail.com</a></td>
-			</tr>
-			<tr>
-			  <th><i class="fas fa-map-marked-alt fa-lg"></i></th>
-			  <td><a href="https://mapy.cz/s/32d6m">Dětské bezbariérové centrum Březiny</a></td>
-			</tr>
-		</table>
-
-		<script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
-		<script type="text/javascript">Loader.load()</script>
-		
-		<div id="mapa"></div>
-		<script type="text/javascript" src="./js/mapy.js"></script>
-		
-	</div>
-</div>
-
-<!-- Patička -->
-<footer class="paticka">
-	<div class="container text-center">
-		<a href="https://skaut.cz" class="text-center"><img src="./images/SKAUT_logo.svg" alt="SKAUT logo" height="100"></a>
-	</div>
-</footer>
-
-<!-- add Bootstrap JS files -->
-<script type="text/javascript" src="./js/jquery.min.js"></script>
-<script type="text/javascript" src="./js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js" integrity="sha256-jGAkJO3hvqIDc4nIY1sfh/FPbV+UK+1N+xJJg6zzr7A=" crossorigin="anonymous"></script>
-<script type="text/javascript" src='./js/main.js'></script>
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "Akce zaèala!";
+    }
+}, 1000);
+</script>
 
 </body>
 </html>
