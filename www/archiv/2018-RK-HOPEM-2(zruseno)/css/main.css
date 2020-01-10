@@ -1,0 +1,131 @@
+body{
+	padding: 0;
+	margin: 0;
+	background:#f4f4f4;
+}
+html,body,h2,h3,h4,h5,h6,a{
+	font-family: themix, sans-serif;
+}
+
+h1{
+    color: #5e2281;
+    font-family: themix, sans-serif;
+	font-weight: bold;
+}
+
+.navbar{
+	background:#5e2281;
+}
+.nav-link , .navbar-brand{
+	color: #f4f4f4;
+	cursor: pointer;
+}
+.navbar-brand:hover{
+	color: #f4f4f4;
+}
+.nav-link{
+	margin-right: 1em !important;
+}
+.nav-link:hover{
+	background: #f4f4f4;
+	color: #5e2281;
+}
+.navbar-collapse{
+	justify-content: flex-end;
+}
+
+.navbar-toggler-icon { 
+	vertical-align:-50%;
+	color:#f4f4f4;
+}
+
+/*header style*/
+.header{                   
+	background-image: url('../images/headerback.webp');
+	background-size: cover;
+	background-position: center;
+	min-height: 35em;
+}
+.description{
+    margin: 54px;
+    padding-top: 10%;
+}
+
+.description p{
+	width: 60%;
+	font-size:1.2em;
+}
+.description a{
+	border:1px  solid #5E2281;
+	background: #5E2281;
+	color:#fff;
+}
+.description a:hover{
+	border:1px  solid #5E2281;
+	background: #6F2899;
+	color:#fff;
+}
+
+.aktuality{
+	margin: 4em 0;
+}
+
+.informace{
+	margin: 4em 0;
+	padding: 1em;
+	position: relative;
+}
+.informace th{
+	background: #eeeeee;
+}
+.informace .fa-4x{
+	margin-left:0.5rem;
+	margin-right:0.5rem;
+}
+
+.card{
+    margin-bottom: 1em;
+}
+
+.card-icon{
+    padding-top: 1.25rem;
+}
+
+.kontakty{
+	margin: 4em 0;
+}
+
+.kontakty i{
+	margin:0.5rem;
+}
+
+#mapa{
+	height:20rem;
+}
+
+.paticka{
+	background:#5e2281;
+	color:#f4f4f4;
+}
+
+.galerie{
+    	margin: 4em 0;
+}
+.galerie a{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin: auto;
+}
+
+.materialy{
+    	margin: 4em 0;
+}
+
+.plakat{
+	margin: 3em 0;
+	text-align: center;
+}
+
+.plakat img{
+	width: 80%;
+}
